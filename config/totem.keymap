@@ -117,10 +117,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)        &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
-       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ENTER        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp CAPS
-&none  &none         &none         &none       &none           &kp TAB          &none      &none     &none         &none      &none     &none
-                                   &kp DELETE  &none           &kp BACKSPACE    &none      &none     &none
+       &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)            &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
+       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ENTER            &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp CAPS
+&none  &none         &none         &none       &none           &kp TAB              &none      &none     &none         &none      &none     &none
+                                   &kp DELETE  &kp BACKSPACE   &kp LC(BACKSPACE)    &none      &none     &none
             >;
         };
 
