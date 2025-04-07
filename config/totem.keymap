@@ -28,16 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         left_hrm: left_hrm {
@@ -91,10 +82,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q             &kp W             &kp E              &kp R              &kp T                       &kp Y        &kp U               &kp I               &kp O              &kp P
-       &left_hrm LGUI A  &left_hrm LALT S  &left_hrm LCTRL D  &left_hrm LSHFT F  &kp G                       &kp H        &right_hrm RSHFT J  &right_hrm RCTRL K  &right_hrm RALT L  &right_hrm RGUI SQT
-&kp Q  &kp Z             &kp X             &kp C              &kp V              &kp B                       &kp N        &kp M               &kp COMMA           &kp DOT            &kp FSLH             &kp BSLH
-                                           &kp DEL            &sl 2              &mt LEFT_SHIFT BACKSPACE    &lt 1 SPACE  &lt 3 ENTER         &kp TAB
+            &kp Q             &kp W             &kp E              &kp R              &kp T                       &kp Y        &kp U               &kp I               &kp O              &kp P
+            &left_hrm LGUI A  &left_hrm LALT S  &left_hrm LCTRL D  &left_hrm LSHFT F  &kp G                       &kp H        &right_hrm RSHFT J  &right_hrm RCTRL K  &right_hrm RALT L  &right_hrm RGUI SQT
+&kp ESCAPE  &kp Z             &kp X             &kp C              &kp V              &kp B                       &kp N        &kp M               &kp COMMA           &kp DOT            &kp FSLH             &kp BSLH
+                                                &kp DEL            &sl 2              &mt LEFT_SHIFT BACKSPACE    &lt 1 SPACE  &lt 3 ENTER         &kp TAB
             >;
         };
 
@@ -117,10 +108,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)            &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
-       &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ENTER            &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp CAPS
-&none  &none         &none         &none       &kp SPACE       &kp TAB              &none      &none     &none         &none      &none     &none
-                                   &kp DELETE  &kp BACKSPACE   &kp LC(BACKSPACE)    &none      &none     &none
+         &none         &none         &none       &none           &none                &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END    &none
+         &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp ENTER            &kp TAB    &kp LEFT  &kp DOWN      &kp RIGHT  &kp CAPS
+&kp TAB  &kp LC(Z)     &kp LC(X)     &kp LC(C)   &kp LC(V)       &kp LC(Y)            &kp PG_DN  &none     &none         &none      &none     &kp ENTER
+                                     &kp DELETE  &kp BACKSPACE   &kp LC(BACKSPACE)    &none      &none     &none
             >;
         };
 
@@ -169,10 +160,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)        &kp PLUS    &kp N7        &kp N8        &kp N9        &kp MINUS
-       &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &kp ENTER        &kp N0      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
-&none  &none      &none      &none      &kp SPACE  &kp TAB          &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp EQUAL
-                             &kp DEL    &mo 4      &kp BACKSPACE    &none       &none         &none
+       &kp NUMBER_1  &kp NUMBER_2  &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7         &kp N8     &kp N9    &kp N0
+       &kp LGUI      &kp LALT      &kp LCTRL  &kp LSHFT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RSHFT      &kp RCTRL  &kp RALT  &kp RGUI
+&none  &none         &none         &kp EQUAL  &kp ASTRK  &kp PLUS                &kp MINUS              &kp KP_DIVIDE  &kp COMMA  &kp DOT   &kp SLASH  &kp ENTER
+                                   &kp DEL    &mo 4      &kp BACKSPACE           &none                  &none          &none
             >;
         };
 
@@ -195,10 +186,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &sys_reset  &bootloader  &to 0       &none      &none    &kp F12  &kp F7  &kp F8  &kp F9  &none
-       &kp LGUI    &kp LALT     &kp LCTRL   &kp LSHFT  &none    &kp F11  &kp F4  &kp F5  &kp F6  &none
-&none  &bt BT_CLR  &bt BT_PRV   &bt BT_NXT  &none      &none    &kp F10  &kp F1  &kp F2  &kp F3  &none  &none
-                                &none       &none      &none    &none    &none   &none
+       &kp F1       &kp F2      &kp F3      &kp F4      &kp F5        &kp F6   &kp F7     &kp F8     &kp F9      &kp F10
+       &kp LGUI     &kp LALT    &kp LCTRL   &kp LSHFT   &kp F11       &kp F12  &kp RSHFT  &kp RCTRL  &kp RALT    &kp RGUI
+&none  &bootloader  &sys_reset  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT    &none    &none      &none      &sys_reset  &bootloader  &none
+                                &none       &none       &none         &none    &none      &none
             >;
         };
 
